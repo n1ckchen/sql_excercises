@@ -11,7 +11,7 @@ WHERE id = 1012
 
 -- 3. Show the player, teamid and mdate and for every German goal.
 -- (teamid='GER')
-SELECT player, teamid, mdate
+SELECT player, teamid, stadium, mdate
 FROM game
 JOIN goal ON (game.id = goal.matchid)
 WHERE teamid = 'GER'
