@@ -83,9 +83,9 @@ JOIN casting
 ON casting.movieid = movie.id
 JOIN actor
 ON actor.id = casting.actorid
-WHERE actor.name = 'John Travolta'
+WHERE actor.name = 'Rock Hudson'
 GROUP BY movie.yr
-HAVING COUNT(movie.title) >= 2;
+HAVING COUNT(movie.title) > 2;
 
 -- # 12. List the film title and the leading actor for all of 'Julie
 -- # Andrews' films.
